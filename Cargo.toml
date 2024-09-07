@@ -24,6 +24,8 @@ default = ["zmq_has"]
 # this feature is a no-op and only present for backward-compatibility;
 # it will be removed in the next API-breaking release.
 zmq_has = []
+# Use the libzmq provided by the OS instead of building it on our own.
+zmq_use_system_library = ["zmq-sys/use_system_library"]
 
 [dependencies]
 bitflags = "1.0"

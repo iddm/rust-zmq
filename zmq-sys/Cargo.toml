@@ -14,6 +14,9 @@ build = "build/main.rs"
 links = "zmq"
 
 [features]
+default = []
+# Don't build libzmq but use one from the system
+use_system_library = []
 
 [dependencies]
 libc = "0.2.15"
